@@ -1,5 +1,5 @@
 # Research-Scripts
-This repository holds a sample of scripts that I wrote to help me and lab mates in the Moradi Lab at the University of Arkansas.
+This repository holds a sample of scripts that I wrote to help me and lab mates in the Moradi Lab at the University of Arkansas https://bslgroup.hosted.uark.edu/.
 
 🧬 The lab is a computational-biophysics lab that focuses on the molecular dynamics of viral components such as the SARS-CoV-2 Spike Protein (my area) and HIV-1 Envelope Glycoprotein as well as other lipids and proteins.
 
