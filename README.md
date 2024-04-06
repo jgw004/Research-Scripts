@@ -8,4 +8,4 @@ Programmatic-Scripts
 👉 The scripts under this repo have helped me with creating *directories* and there *subdirectories*, *fast checking* of active/inactive simulation process, pulling *vital information* from desired files, *changing* and *running* all necessary files at once, as well as other day-to-day processes over the terminal (local and/or remote).<br><br>
 
 -----
-🤝 Please, feel free to reach out to me [[LinkedIn](https://www.linkedin.com/in/joseph-williamson-373359107/)] with any constructive critiques or curiousities about my scripts/work! Due to ongoing projects, I may have to refrain from answering certain aspects due to confidentiality, but it doesn't hurt to try! (:
+🤝 Please, feel free to reach out to me [[LinkedIn](https://www.linkedin.com/in/joseph-williamson-373359107/)] with any constructive critiques or curiousities about my scripts/work! Due to ongoing projects, I may have to refrain from answering certain aspects due to confidentiality, but it doesn't hurt to ask! (:
