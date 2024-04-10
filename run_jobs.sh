@@ -2,18 +2,19 @@
 #1 - make sure {run_script} is set.
 #2 - make sure current {input_file} and previous {input_file} are able to communicate.
 
+RUN_FILE="run_file"
 TOP_PATH=$(pwd)
 
 ## List each directory
-a=("dir1" "dir2" "dir3")
+a=("dir1" "dir2" "dir3" "dir4" "dir5" "dir6" "dir7")
 for i in "${a[@]}" ; do
 
-DIR_PATH="absolute/${i}/pathway"
+BATCH_PATH="${i}/pathway"
 
 echo "-------${i}---------"			# shows the current dir
 
-cd $ABS_PATH
-sbatch {run_file} 
+cd $BATCH_PATH
+sbatch $RUN_FILE 
 cd $TOP_PATH 
 
 #########################
@@ -26,7 +27,7 @@ cd $TOP_PATH
 #echo "-------${i} Rep$k---------"		# show current dir of replica
 #
 #cd $DIR_REP
-#sbatch {run_file}
+#sbatch $RUN_FILE
 #cd $TOP_PATH
 
 ##########################
