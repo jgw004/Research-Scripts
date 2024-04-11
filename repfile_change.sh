@@ -14,9 +14,9 @@ for k in 1 2 3 4 5 6 7 8 ; do       #number of replicas
 REP_PATH="${i}/Rep$k/path/way"
 
 cd $TOP_PATH/$REP_PATH              #absolute pathway
-echo "-- ${i} - R$k"
+echo "-- ${i} - R$k --"
 
-## Change file conents of *$RUN_FILE
+## Change file conents of {run_file}
 #sed -i "s/\(#SBATCH -J \)wild_R1/\1${i}_$k/" "$RUN_FILE"	    ##job name
 #sed -i "s/\(#SBATCH -N \)4/\16/" "$RUN_FILE"			        ##node
 #sed -i "s/\(#SBATCH -n \)4/\16/" "$RUN_FILE"			        ##node number
