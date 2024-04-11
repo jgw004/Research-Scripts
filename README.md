@@ -1,8 +1,11 @@
-# Research-Scripts
-This repository holds a sample of scripts that I wrote to help me and lab mates in the Moradi Lab at the University of Arkansas https://bslgroup.hosted.uark.edu/.
+Programmatic-Scripts
+=
+🧬 This repository holds a sample of scripts that I wrote for the purpose of helping me and my lab mates (at the Moradi Lab, University of Arkansas https://bslgroup.hosted.uark.edu/).<br><br>
+The lab is a computational-biophysics lab focused on the molecular dynamics (MD) of viral components such as the SARS-CoV-2 Spike Protein (my area) and HIV-1 Envelope Glycoprotein along with other lipids and proteins.<br>
 
-🧬 The lab is a computational-biophysics lab that focuses on the molecular dynamics of viral components such as the SARS-CoV-2 Spike Protein (my area) and HIV-1 Envelope Glycoprotein as well as other lipids and proteins.
+-----
+👉 The scripts under this repo have helped me with creating *directories* and there *subdirectories*, *fast checking* of active/inactive processes, pulling *vital information* from desired files, *changing* and *running* all necessary files at once, as well as other day-to-day processes over the terminal (local and/or remote).<br><br>
+I believe that the programmatic workflow of these scripts can be taken and applied to other coding projects as well!<br>
 
-♽ Though, many of my scripts are engineered to study the components of the CoV2 spike protein, I believe that I implement proper communication and workflow through each script that can be taken and applied to other coding projects as well!
-
-🤝 Please, feel free to reach out to me with any constructive critiques or curiousity about the work! Keep in mind that asking about the latter may require me to refrain at certain aspects due to confidentiality, but it doesn't hurt to try! (:
+-----
+🤝 Please, feel free to reach out to me [[LinkedIn](https://www.linkedin.com/in/joseph-williamson-373359107/)] with any constructive critiques or curiousities about my scripts/work! Due to ongoing projects, I may have to refrain from answering certain aspects due to confidentiality, but it doesn't hurt to ask! (:
