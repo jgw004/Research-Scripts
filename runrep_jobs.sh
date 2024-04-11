@@ -9,10 +9,10 @@ for i in "${a[@]}" ; do
 
 #########################
 ##### Replicates ######
-for k in 1 2 3 4 5 6 7 8 ; do 
+for k in 1 2 3 4 5 6 7 8 ; do       #number of replicas
 
 TOP_PATH=$(pwd)
-REP_PATH="${i}/Rep$k/path/way"
+REP_PATH="${i}/Rep$k/path/way"      #absolute pathway
 
 echo "-------${i} Rep$k---------"
 cd $TOP_PATH/$REP_PATH
