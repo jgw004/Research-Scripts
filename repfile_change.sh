@@ -1,40 +1,35 @@
 #!/bin/bash
-### This script can be continued from run_jobs.sh
+### This script can be continued from 'runrep_jobs.sh'
 
-######CLI Check###############
-#for a in "WT7kms" "Alpha7kms" ; do for k in 1 2 3 ; do cd /work2/09231/jgw004/frontera/7kms/$a/Rep$k/ch*/namd/ ; {command} ; done ; done
 #################################
-
+RUN_FILE="run_file"
+TOP_PATH=$(pwd)
 
 # Naming directories
-a=("WT7kms" "Alpha7kms" "Gamma7kms" "D614G7kms" "Delta7kms" "Epsilon7kms" "Moderna7kms")
-#a=("Beta7kms")
-for i in ${a[@]} ; do
+a=("dir1" "dir2" "dir3" "dir4" "dir5" "dir6" "dir7")
+for i in "${a[@]}" ; do
 
-for k in 1 2 3 ; do
+for k in 1 2 3 4 5 6 7 8 ; do       #number of replicas
 
-TOP_PATH="/work2/09231/jgw004/frontera/7kms"
-REP_PATH="${i}/Rep$k/ch*/namd"
+REP_PATH="${i}/Rep$k/path/way"
 
-cd $TOP_PATH/$REP_PATH
+cd $TOP_PATH/$REP_PATH              #absolute pathway
 echo "-- ${i} - R$k"
 
-## replace file conents of *ad_run_fr
-#sed -i "s/\(#SBATCH -J \)wild_R1/\1${i}_$k/" "ad_run_fr"	##job name
-sed -i "s/\(#SBATCH -N \)04/\16/" "ad_run_fr"			##node
-sed -i "s/\(#SBATCH -n \)04/\16/" "ad_run_fr"			##node number
-#sed -i "s/\(#SBATCH -p \)normal/\1development/" "ad_run_fr"    ##type
-#sed -i "s/\(#SBATCH -t \)06/\124/" "ad_run_fr"			##run-time
-#sed -i "s/\(ibrun namd2 .*\)step4_equilibration1.inp/\1step4_equilibration2.inp/" "ad_run_fr"
-#sed -i "s/\(ibrun namd2 .*\)step4.1_equilibration\.log/\1step4.2_equilibration.log/" "ad_run_fr"
-
-## replace file conents of step5.1.*_development.inp
-#sed -i "s/\(outputName[[:space:]]\+step5\.1\.\)40_development/\1${k}_development/" "$file_path_input"
+## Change file conents of *$RUN_FILE
+#sed -i "s/\(#SBATCH -J \)wild_R1/\1${i}_$k/" "$RUN_FILE"	    ##job name
+#sed -i "s/\(#SBATCH -N \)4/\16/" "$RUN_FILE"			        ##node
+#sed -i "s/\(#SBATCH -n \)4/\16/" "$RUN_FILE"			        ##node number
+#sed -i "s/\(#SBATCH -p \)normal/\1development/" "$RUN_FILE"    ##type
+#sed -i "s/\(#SBATCH -t \)6/\124/" "$RUN_FILE"			        ##run-time
+#sed -i "s/\(ibrun namd2 .*\)step4_equilibration1.inp/\1step4_equilibration2.inp/" "$RUN_FILE"
+#sed -i "s/\(ibrun namd2 .*\)step4.1_equilibration\.log/\1step4.2_equilibration.log/" "$RUN_FILE"
 
 
 ####################
 ##### CHECKING #####
-grep -Ei 'sbatch -N|SBATCH -t|ibrun namd2' ad_run_fr > checkrep-contents.txt
+## Stores the run_file contents of the grepped parts from the last iteration
+grep -Ei 'sbatch -N|SBATCH -t|ibrun namd2' $RUN_FILE > checkrep-contents.txt
 
 cp checkrep-contents.txt $TOP_PATH  #to compare after theyre done
 #mv charmm-gui$k old$k
@@ -51,7 +46,7 @@ done
 echo ""
 cat checkrep-contents.txt
 echo ""
-echo " ==  All changes to 'ad_run_fr' were applied successfully!"
+echo " ==  All changes to '$RUN_FILE' were applied successfully!"
 echo ""
 
 #####################
