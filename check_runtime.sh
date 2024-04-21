@@ -14,7 +14,7 @@ echo " "
 
 ##Variants###
 a=("dir1" "dir2")
-for i in ${a[@]} ; do
+for i in "${a[@]}" ; do
 
 CHECK_PATH="${i}/Rep$k/path/way"
 
@@ -39,7 +39,7 @@ echo ""
 
 echo "   ##Other Variants##"
 a=("dir3" "dir4" "dir5" "dir6" "dir7")
-for i in ${a[@]} ; do
+for i in "${a[@]}" ; do
 
 CHECK_PATH="${i}/Rep$k/path/way"
 
