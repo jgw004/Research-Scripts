@@ -1,6 +1,6 @@
 #!/bin/bash
 ### This script calls run_jobs.sh after the changes are made to the files.
-$RUN_FILE="run_file"
+RUN_FILE="run_file"
 TOP_PATH=$(pwd)
 
 # Naming your directories
@@ -8,7 +8,7 @@ a=("dir1" "dir2" "dir3" "dir4" "dir5" "dir6" "dir7")
 for i in ${a[@]} ; do
 
 # Name the path to run the batch file
-BATCH_PATH="${i}7kms/ch*/namd"
+BATCH_PATH="${i}/Rep$k/path/way"
 
 cd $BATCH_PATH
 echo "------ ${i} -------"
