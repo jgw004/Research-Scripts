@@ -1,6 +1,6 @@
 Programmatic-Scripts
 =
-🧬 This repository holds a sample of scripts that I wrote for the purpose of helping me and my lab mates (at the Moradi Lab, University of Arkansas https://bslgroup.hosted.uark.edu/).<br><br>
+🧬 This repository holds a sample of scripts that I wrote for the purpose of helping me and my lab mates (at the Moradi Lab, University of Arkansas).<br><br>
 The lab is a computational-biophysics lab focused on the molecular dynamics (MD) of viral components such as the SARS-CoV-2 Spike Protein (my area) and HIV-1 Envelope Glycoprotein along with other lipids and proteins.<br>
 
 -----
